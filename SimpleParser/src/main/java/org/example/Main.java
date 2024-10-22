@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -8,23 +9,20 @@ import java.util.Scanner;
 public class Main {
 
 
-    public static void main(String[] args) {
-
-        // Create a Scanner object to get input from stdin
-        Scanner scanner = new Scanner(System.in);
-
-        // Prompt user for input
-        System.out.println("Enter the string to tokenize:");
-        String input = scanner.nextLine();
-
+    public static void main(String[] args) throws IOException {
 
         Tokenizer tokenizer = new Tokenizer();
-        List<Token> tokens = tokenizer.tokenize(input);
+        Parser parser = new Parser();
+        List<String> stmts = new FileReader().readFileFromResources("simp.smt2");
 
-        System.out.println(tokens);
-        ASTTree tree = new Parser().parse(tokens);
+        stmts.forEach(stmt -> {
+            List<Token> tokens = tokenizer.tokenize(stmt);
+            ASTTree tree = parser.parse(tokens);
+            System.out.println(tree.eval());
+        });
 
-        System.out.println(tree.eval());
+
+
 
     }
 }

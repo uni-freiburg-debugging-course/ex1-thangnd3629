@@ -34,7 +34,6 @@ class ASTTree {
                 return left.eval() * right.eval();
             }
             case FUNCTION_CALL -> {
-                System.out.println(String.format("Function called with argument %s", left.eval()));
                 // assuming that this is a no-op function
                 return left.eval();
 
