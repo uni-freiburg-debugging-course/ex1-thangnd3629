@@ -15,8 +15,7 @@ or
 ```
 2. Run parser and evaluate expression
 ```
-java -jar target/SimpleParser-v1.jar
-
+java -jar target/SimpleParser-v1-jar-with-dependencies.jar
 ```
 
 
