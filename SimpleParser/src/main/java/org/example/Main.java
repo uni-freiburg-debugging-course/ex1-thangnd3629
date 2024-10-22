@@ -2,10 +2,7 @@ package org.example;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
 
@@ -13,7 +10,7 @@ public class Main {
 
         Tokenizer tokenizer = new Tokenizer();
         Parser parser = new Parser();
-        List<String> stmts = new FileReader().readFileFromResources("simp.smt2");
+        List<String> stmts = new FileReader().readFile("../seed.txt");
 
         stmts.forEach(stmt -> {
             List<Token> tokens = tokenizer.tokenize(stmt);

@@ -18,5 +18,10 @@ or
 java -jar target/SimpleParser-v1-jar-with-dependencies.jar
 ```
 
+## Fuzzer
+```
+
+```
+
 
 
