@@ -8,7 +8,7 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         Fuzzer simpleFuzzer = new Fuzzer();
         System.out.println("FUZZER ------- Start generating statements");
-        simpleFuzzer.writeBatchSeed(1000);
+        simpleFuzzer.writeBatchSeed(10);
         System.out.println("FUZZER ------- 1000 statements generated");
     }
 }
