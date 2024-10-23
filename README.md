@@ -8,4 +8,5 @@
 ```sh
 chmod +x run.sh && ./run.sh
 ```
+Generated seed file can be found at ./seed.txt
 

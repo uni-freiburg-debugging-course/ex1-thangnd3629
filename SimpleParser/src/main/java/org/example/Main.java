@@ -10,7 +10,7 @@ public class Main {
 
         Tokenizer tokenizer = new Tokenizer();
         Parser parser = new Parser();
-        List<String> stmts = new FileReader().readFile("../seed.txt");
+        List<String> stmts = new FileReader().readFile("./seed.txt");
 
         stmts.forEach(stmt -> {
             List<Token> tokens = tokenizer.tokenize(stmt);

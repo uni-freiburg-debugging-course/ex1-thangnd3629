@@ -20,7 +20,7 @@ public class Fuzzer {
 
     public void writeBatchSeed(int fileLength) {
 
-        String filePath = "../seed.txt";  // File where the line will be written
+        String filePath = "./seed.txt";  // File where the line will be written
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             for (int i = 0; i < fileLength; i++) {
