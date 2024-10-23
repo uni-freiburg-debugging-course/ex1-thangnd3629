@@ -1,8 +1,12 @@
-# Debugging 24/25 Exercise 1
+# Readme
 
-Detailed instructions are in the exercise sheet. Following are your checkpoints:
+## Enviroment
+1. Java JDK 17
+2. Maven 3.7 ( Or use maven wrapper included in source code)
 
-- [ ] Implement parser and evaluator
-- [ ] Implement a fuzzer
-- [ ] Generate *lots* of random instances with your fuzzer. Your evaluator and z3 must return the same result on generated instances
-- [ ] Provide detailed build instructions for your code so that we can evaluate it
+## Run 
+```sh
+chmod +x run.sh && ./run.sh
+```
+Generated seed file can be found at ./seed.txt
+
